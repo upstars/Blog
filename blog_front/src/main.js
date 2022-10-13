@@ -18,6 +18,8 @@ import { AdminStore } from "./stores/AdminStore";
 const app = createApp(App);
 
 axios.defaults.baseURL = "http://localhost:8888";
+//跨域访问
+//axios.defaults.baseURL = "/api";
 
 const { message, notification, dialog } = createDiscreteApi([
   "message",
